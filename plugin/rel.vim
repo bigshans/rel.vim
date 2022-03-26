@@ -64,10 +64,10 @@ if g:rel_highlight > 0
   augroup END
 endif
 
-if ! hasmapto('<Plug>(Rel)')
-  nmap <unique> <C-k> <Plug>(Rel)
-  nmap <C-LeftMouse> <Plug>(Rel)
-endif
+" if ! hasmapto('<Plug>(Rel)')
+  " nmap <unique> <C-k> <Plug>(Rel)
+  " nmap <C-LeftMouse> <Plug>(Rel)
+" endif
 
 nnoremap <Plug>(Rel) :call rel#Rel()<CR>
 command! -nargs=* Rel call rel#Rel(<f-args>)
