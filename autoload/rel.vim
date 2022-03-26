@@ -405,8 +405,8 @@ fun! s:TokenAtCursor(line, cpos) abort
   let l:line = map(split(a:line, '\zs'), {i, c -> char2nr(c)})
   let l:last = len(a:line)
 
-  let l:b = a:cpos
-  let l:e = a:cpos
+  let l:b = a:cpos - 1
+  let l:e = a:cpos - 1
   let l:bok = 1
   let l:eok = 1
 
